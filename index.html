@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Школьный Баттл</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Верхняя панель -->
+        <div class="top-bar">
+            <div class="resource">
+                <span class="icon">📚</span>
+                <span id="kpDisplay">0</span>
+            </div>
+            <div class="resource">
+                <span class="icon">🧠</span>
+                <span id="stDisplay">0</span>
+            </div>
+            <div class="resource">
+                <span class="icon">🏆</span>
+                <span id="levelDisplay">1</span>
+            </div>
+        </div>
+        
+        <!-- Персонаж -->
+        <div class="character-container">
+            <div class="character" id="character">
+                🧑‍🎓
+            </div>
+        </div>
+        
+        <!-- Статистика -->
+        <div class="stats">
+            <div class="stat-box">
+                <div class="value" id="tapCount">0</div>
+                <div class="label">👆 Тапов</div>
+            </div>
+            <div class="stat-box">
+                <div class="value" id="streakDisplay">0</div>
+                <div class="label">🔥 Серия</div>
+            </div>
+            <div class="stat-box">
+                <div class="value" id="bonusDisplay">0</div>
+                <div class="label">🎁 Бонус</div>
+            </div>
+        </div>
+        
+        <!-- Кнопки -->
+        <button class="action-btn bonus-btn" id="bonusBtn">🎁 Бонус</button>
+        <button class="action-btn battle-btn" id="battleBtn">⚔️ Битва</button>
+        
+        <!-- Нижнее меню -->
+        <div class="bottom-menu">
+            <button class="menu-btn" data-page="shop">🏪<span>Магазин</span></button>
+            <button class="menu-btn" data-page="inventory">🎒<span>Инвентарь</span></button>
+            <button class="menu-btn" data-page="lobby">🏫<span>Лобби</span></button>
+            <button class="menu-btn" data-page="skills">📊<span>Навыки</span></button>
+            <button class="menu-btn" data-page="glory">⭐<span>Слава</span></button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
